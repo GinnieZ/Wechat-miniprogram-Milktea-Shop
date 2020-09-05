@@ -1,0 +1,20 @@
+<view class='imagesize'>
+    <image src= "/icon/index1.jpg" class="image"></image>
+  </view>
+
+<view class="ipt">
+  <input type="number" bindinput="inputphone" placeholder="请输入手机号" ></input>
+</view>
+<view class="ipt">
+  <input type="text" bindinput="inputpwd" placeholder="请输入密码" password="true"></input>
+</view>
+<view class="ipt">
+  <input type="text" bindinput="inputpwdagain" placeholder="请再次输入密码" password="true"
+   ></input>
+</view>
+<view class="btn" bindtap="submit">
+  <view class="fontstyle">确定</view>
+</view>
+
+
+

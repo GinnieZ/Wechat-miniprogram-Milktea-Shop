@@ -1,0 +1,42 @@
+<view class="u">
+  <view class="logo" bindtap="changelogo">
+    <image src="/icon/index1.jpg" class="image"></image>
+  </view>
+</view>
+
+<form bindsubmit="changeInfo" class="ub">
+<!-- <view class="ub"> -->
+  <view class="item" >
+    <view class="text">昵称</view>
+    <view class="input" >
+      <input type="text" id="changeusername" value="{{username}}" name="changeusername"></input>
+    </view>
+  </view>
+
+  <view class="item" >
+    <view class="text">手机</view>
+    <view class="input">{{phone}}</view>
+  </view>
+
+  <view class="item" >
+    <view class="text">性别</view>
+    <radio-group class="input" bindchange="updateRadio">
+      <checkbox value='man' checked="{{manchecked}}" >男</checkbox>
+      <view class="checkbox">
+        <checkbox value='woman' checked="{{womanchecked}}">女</checkbox>
+      </view>
+   </radio-group>
+  </view>
+
+
+  <view class="item" >
+    <view class="text">生日</view>
+    <view class="input" >
+      <input type="text" id="changebirthday" value="{{birthday}}" name="changebirthday"></input>
+    </view>
+  </view>
+
+<!-- </view> -->
+<button form-type="submit"  class="btn"><view class="text">保存</view></button>
+
+</form>

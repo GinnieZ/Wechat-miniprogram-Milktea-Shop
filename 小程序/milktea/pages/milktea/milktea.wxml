@@ -1,0 +1,27 @@
+<view class="container">
+	<view class="index">
+		<view class="index-left">
+			<scroll-view scroll-with-animation="true" scroll-y style="height:100vh;" scroll-top="{{leftToTop}}">
+				<view wx:for="{{milktea}}" wx:key="id" bindtap="jumpTo" data-id="{{item.id}}" style="background: {{item.id === currentLeftSelect ? '#F6EEE4' : ''}}" class="index-left-text">
+					<view class="navi-bar" id="{{item.id}}">
+						{{item.name}}
+					</view>
+				</view>
+			</scroll-view>
+		</view>
+		<view class="index-right">
+			<scroll-view scroll-with-animation="true" scroll-y style="height: 100vh;" bindscroll="rightScroll" scroll-into-view="{{toView}}" bindscrolltolower="lower">
+				<view wx:for="{{milktea}}" wx:key="id" id="{{item.id}}">
+					<view class="index-right-text-top"><text>{{item.name}}</text></view>
+					<view class="index-right-text" wx:for="{{item.category}}" wx:key="id">
+						<view class="eachOne" bindtap="showDetail" data-id="{{item.id}}">
+							<image src="/images/id{{item.id}}.jpg" class="rec-img"></image>
+							<view class="rec-name">{{item.name}}</view>
+							<view class="rec-price">￥{{item.price}}</view>
+						</view>
+					</view>
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+</view>

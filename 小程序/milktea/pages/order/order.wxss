@@ -1,0 +1,112 @@
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    line-height: 80rpx;}
+.swiper-tab-list{  font-size: 30rpx;
+    display: inline-block;
+    width: 33.33%;
+    color: #777777;
+}
+.on{ color:rgb(16, 69, 112);
+    border-bottom: 3rpx solid rgb(16, 69, 112);}
+.null {
+  text-align: center;
+  padding: 20px 0;
+  color: #ccc;
+  background-color: #fff;
+}
+.emptyImg{
+  width: 500rpx;
+  height: 500rpx;
+}
+/*  */
+/* .tab-layer{width: 750rpx;height: 50px; background: #fff;opacity: 0.9;left: 0;top: 0; position: fixed;z-index: 99; border-bottom: 1rpx solid #dedede;} */
+/*  */
+.box{
+  width: 100%;
+  height: 1000rpx;
+  background-color:gainsboro;
+  /* 弹性布局 */
+  /* display: flex; */
+  /* 弹性布局希不希望换行 */
+  /* flex-wrap: wrap; */
+  /* 设置元素的间距
+  justify-content: space-around;
+  align-items: center; */
+}
+.box .whiteSpace{
+  width: 100%;
+  height: 20rpx;
+  background-color:gainsboro;
+}
+.box .eachOne{
+  /* width: 30%; */
+  width: 100%;
+  height: 290rpx;
+  background-color:white; 
+  display: flex;
+  flex-direction: column;
+  /* 水平居中 */
+  /* justify-content: center; */
+  /* 垂直居中 */
+  align-items: center;
+}
+
+/* #mess2{
+  background-color:oldlace;
+} */
+
+.box .eachOne .pic{
+  width: 100%;
+  height: 150rpx;
+  /* background-color:azure; */
+  background-color:white;
+  border-radius:10rpx;
+  display: flex;
+  /* flex-direction: column;  */
+  /* justify-content: center; 
+  align-items: center; */
+  align-items: center;
+}
+.box .eachOne .pic .eachPic{
+  width: 15%;
+  height: 80%;
+  /* background-color:azure; */
+  background-color:white;
+  border-radius:10rpx;
+  display: flex;
+  /* flex-direction: column;  */
+  /* justify-content: center; 
+  align-items: center; */
+  align-items: center;
+  padding-left: 5rpx
+}
+.img{
+  width: 90%;
+  height: 90%;
+  /* border-radius:50%; */
+}
+.info{
+  width: 100%;
+  height: 120rpx;  
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  /* text-align: center; */
+}
+.info .timeAndId{
+  width: 80%;
+  height: 120rpx;  
+  font-size: 30rpx;
+  color:dimgrey;
+  /* text-align: center; */
+}
+
+.info .price{
+  width: 20%;
+  height: 60rpx;  
+  font-size: 40rpx;
+  color:rgb(75, 74, 74);
+  text-align: center; 
+  
+}

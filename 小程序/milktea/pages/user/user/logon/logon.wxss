@@ -1,0 +1,34 @@
+.imagesize{
+  display:flex;                 
+  justify-content: center;         
+ }
+ 
+ .imagesize image { 
+   width:400rpx;
+   height:400rpx;
+}
+.body {
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 5px 0 #f7f7f7;
+  font-size: 15px;
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif;
+}
+.ipt{background: #eee; margin: 10px;width:95%;}
+.ipt input{height:40px;}
+.btn {
+  display: block;
+  height: 1.888em;
+  line-height: 1.888em;
+  margin: 10px auto;
+  margin-top:20px;
+  width: 80%;
+  text-align: center;
+  background-color:#e7c290;
+  border-radius: 8px;
+  border: none;
+}
+.btn .fontstyle{
+  color: #fff;
+  font-size: 0.8em;
+}

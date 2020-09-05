@@ -1,0 +1,64 @@
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichTab">今日订单</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichTab">历史订单</view>
+</view>
+
+<!-- <view class="tab-layer"></view> -->
+<view wx:if="{{currentTab==0}}">
+  <view wx:if="{{miniOrderList.length==0}}" class="null">
+  你今天无订单，赶快去点单吧
+  <image src="/icon/empty3.png" class="emptyImg"></image>
+</view>
+  <view class="box" >
+    <view class="whiteSpace"></view>
+    <view class="eachOne" wx:for="{{miniOrderList}}" wx:key="index" bindtap="showDetail" data-id="{{item.orderId}}">
+
+      <view class="pic">
+        <view class="eachPic" wx:for="{{item.img}}" wx:key="index">
+          <!-- <image class="img" src="/images/img"+"{{item}}"+".png" ></image> -->
+          <image class="img" src="{{item}}" ></image>
+        </view>
+      </view>
+
+      <view class="info" style="white-space:pre-wrap">
+        <view class="timeAndId" style="white-space:pre-wrap">  下单时间：{{item.orderTime}}
+  订单编号:{{item.orderId}}
+        </view>
+        <view class="price">￥:{{item.totalPrice}}</view>
+      </view>
+      <view class="whiteSpace"></view>
+    </view>
+    
+  </view>
+</view>
+
+<view wx:if="{{currentTab==1}}">
+
+  <view wx:if="{{miniOrderList.length==0}}" class="null">
+  你还未下过单，赶快去点单吧
+  <image src="/icon/empty3.png" class="emptyImg"></image>
+  </view>
+  <view class="box" >
+
+    <view class="whiteSpace"></view>
+    <view class="eachOne" wx:for="{{miniOrderList}}" wx:key="index" bindtap="showDetail" data-id="{{item.orderId}}">
+
+      <view class="pic">
+        <view class="eachPic" wx:for="{{item.img}}" wx:key="index">
+          <!-- <image class="img" src="/images/img"+"{{item}}"+".png" ></image> -->
+          <image class="img" src="{{item}}" ></image>
+        </view>
+      </view>
+      
+      <view class="info" style="white-space:pre-wrap">
+        <view class="timeAndId" style="white-space:pre-wrap">  下单时间：{{item.orderTime}}
+  订单编号:{{item.orderId}}
+        </view>
+        <view class="price">￥:{{item.totalPrice}}</view>
+      </view>
+      <view class="whiteSpace"></view>
+    </view>
+    
+  </view>
+</view>
+

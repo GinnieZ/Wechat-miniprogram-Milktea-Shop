@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.demo01.demo.mappers.OrderMapper">
+    <!--sql-->
+    <!--根据用户名 查询用户所有订单-->
+    <!--<select id="findAllOrderByName" resultType="Order">-->
+        <!--select drinkId,orderId,orderTime from orderTable where userName=#{userName}-->
+    <!--</select>-->
+    <select id="findAllOrderByName" resultType="OrderEntry">
+        select * from orderTable where userName=#{userName}
+    </select>
+
+    <select id="findAllMiniOrder" resultType="MiniOrderEntry">
+        select userName, drinkId, orderTime, orderId, drinkNum, drinkPrice from orderTable where userName=#{userName}
+    </select>
+
+    <select id="findOneOrder" resultType="OrderEntry">
+        select * from orderTable where userName=#{userName} and orderId=#{orderId}
+    </select>
+    <!--怎么根据日期查询！！！！！！！-->
+    <!--根据用户名 查询用户当日订单-->
+    <select id="findTodayMiniOrder" resultType="MiniOrderEntry">
+        select * from ordertable where userName=#{userName} and to_days(orderTime) = to_days(now());
+    </select>
+
+    <!--查询最后一个订单的订单编号-->
+    <select id="findLastOrderId" resultType="int">
+        select   orderId   from   orderTable   order   by   orderId   desc   limit   1
+    </select>
+
+    <!--查询最后一个订单的取茶码-->
+    <select id="findLastPickId" resultType="int">
+        select   pickId   from   orderTable   order   by   orderId   desc   limit   1
+    </select>
+
+    <!--增加-->
+    <!--增删改都没有resultType-->
+    <!---->
+    <insert id="addOneOrder" parameterType="OrderEntry">
+        insert into orderTable value(#{userName},#{drinkId},#{drinkName},#{drinkInfo},#{drinkPrice},#{drinkNum},#{orderTime},#{orderId},#{pickId})
+    </insert>
+
+</mapper>

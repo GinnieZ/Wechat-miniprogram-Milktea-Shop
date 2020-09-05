@@ -1,0 +1,64 @@
+<view class="main">
+	<image wx:if="{{milktea}}" src="/images/id{{milktea.id}}.jpg" class="current-img"></image>
+	<view class="current-name">{{milktea.name}}</view>
+	<view class="current-des">{{milktea.des}}</view>
+
+	<view class="subtitle">0糖低卡甜菊糖</view>
+	<view class="button-container">
+		<block wx:for="{{zero_buttons}}" wx:key="buttons">
+			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='zeroButtonTap'>{{item.name}}</button>
+		</block>
+	</view>
+
+	<view class="subtitle">绿色餐具</view>
+	<view class="button-container">
+		<block wx:for="{{straw_buttons}}" wx:key="buttons">
+			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='strawButtonTap'>{{item.name}}</button>
+		</block>
+	</view>
+
+	<view class="subtitle">状态</view>
+	<view class="button-container">
+		<block wx:for="{{sugar_buttons}}" wx:key="buttons">
+			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='sugarButtonTap'>{{item.name}}</button>
+		</block>
+	</view>
+
+	<view class="subtitle">冰量</view>
+	<view class="button-container">
+		<block wx:for="{{ice_buttons}}" wx:key="buttons">
+			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='iceButtonTap'>{{item.name}}</button>
+		</block>
+	</view>
+
+	<view class="subtitle">加料</view>
+	<view class="button-container">
+		<block wx:for="{{cheese_buttons}}" wx:key="buttons">
+			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='cheeseButtonTap'>{{item.name}}</button>
+		</block>
+		<block wx:for="{{double_buttons}}" wx:key="buttons">
+			<button class='{{item.checked?"checked-button":"normal-button"}}' data-id='{{item.id}}' bindtap='doubleButtonTap'>{{item.name}}</button>
+		</block>
+	</view>
+</view>
+
+<view class="bottom-bar">
+	<view class="bottom-bar-top">
+		<view class="current-price">￥
+			<text>{{price}}</text>
+		</view>
+		<view class="total-text">{{total}}</view>
+
+		<!-- 增加减少数量按钮 -->
+		<view class="number">
+			<view class="minus-button" bindtap="minusCount" data-index="{{index}}">
+				<text>-</text></view>
+			<text class="milktea-num">{{num}}</text>
+			<view class="plus-button" bindtap="plusCount" data-index="{{index}}">
+				<text>+</text>
+			</view>
+		</view>
+	</view>
+	<button class="confirm" bindtap='confirmButtonTap'>
+	<text>加入购物袋</text></button>
+</view>

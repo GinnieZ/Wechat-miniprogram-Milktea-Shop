@@ -1,0 +1,67 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/milktea/milktea",
+    "pages/milkteaDetail/milkteaDetail",
+    "pages/cart/cart",
+    "pages/order/order",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/user/user/changeSecret/changeSecret",
+    "pages/user/user/changeUserInfo/changeUserInfo",
+    "pages/user/user/logon/logon",
+    "pages/orderDetail/orderDetail",
+    "pages/pay/pay",
+    "pages/wepay/wepay"
+  ],
+  "window":{
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFE4C4",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/main.png",
+        "selectedIconPath": "icon/main_on.png"
+      },
+      {
+        "pagePath": "pages/milktea/milktea",
+        "text": "点单",
+        "iconPath": "icon/tea.png",
+        "selectedIconPath": "icon/tea_on.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "icon/cart.png",
+        "selectedIconPath": "icon/cart_on.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "icon/order.png",
+        "selectedIconPath": "icon/order_on.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "icon/my.png",
+        "selectedIconPath": "icon/my_on.png"
+      }
+    ],
+    "backgroundColor": "#f3f3f3",
+    "color": "#999",
+    "selectedColor": "#576b95"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000,
+    "uploadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

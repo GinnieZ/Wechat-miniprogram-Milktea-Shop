@@ -1,0 +1,37 @@
+<view class="title">
+<image src="/icon/java.png" class="java-img"></image>
+<view class="tex">
+伪装喜茶
+</view>
+</view>
+
+<!-- 轮播图展示海报 -->
+<swiper autoplay="true" indicator-dots="true" indicator-color="pink" indicator-active-color="orange" interval="3000" duration="500" class="swiperTop">
+	<swiper-item>
+		<image src="/banner/bnr1.jpg" class="bnr-img" mode="widthFix"></image>
+	</swiper-item>
+	<swiper-item>
+		<image src="/banner/bnr2.jpg" class="bnr-img" mode="widthFix"></image>
+	</swiper-item>
+	<swiper-item>
+		<image src="/banner/bnr3.jpg" class="bnr-img" mode="widthFix"></image>
+	</swiper-item>
+</swiper>
+
+<view class="recommend-bar">
+<view class="recommend-title">为你推荐</view>
+<view class="refresh" bindtap="recommend">
+<text>换一换</text>
+<image src="/icon/refresh.png" class="refresh-img"></image>
+</view>
+</view>
+
+<view class="recommend">
+	<view wx:for="{{recommendedMilktea}}" wx:key="index">
+		<view class="eachOne" bindtap="showDetail" data-id="{{item.id}}">
+			<image src="/images/id{{item.id}}.jpg" class="rec-img"></image>
+			<view class="rec-name">{{item.name}}</view>
+			<view class="rec-price">￥{{item.price}}</view>
+		</view>
+	</view>
+</view>

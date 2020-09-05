@@ -1,0 +1,9 @@
+<view class="box">
+  <text>伪装喜茶</text>
+
+  <view class="total">{{total}}</view>
+  
+  <view class="payway">零钱</view>
+
+  <button class="ok">确认支付</button>
+</view>

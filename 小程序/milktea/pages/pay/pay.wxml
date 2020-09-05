@@ -1,0 +1,50 @@
+
+
+<view class="list">
+
+  <view class="phone" style="white-space:pre-wrap">联系电话   {{phone}}
+  </view>
+  <view class="whiteSpace"></view>
+
+  <view class="label">商品列表</view>
+
+  <view class="eachOne" wx:for="{{drinkList}}" wx:key="index" >
+
+      <view class="pic">
+        <image class="img" src="{{item.imgUrl}}" ></image>
+      </view>
+      
+          <view class="drinkNameAndInfo" >  
+      <view class="drinkName">
+        {{item.name}}
+      </view>
+      <view class="drinkInfo">
+        {{item.size}}
+      </view>
+  
+    </view>
+    
+    <view class="drinkNum">
+      x{{item.num}}
+    </view>
+    <view class="drinkPrice">
+      ￥{{item.price}}
+    </view>
+      
+  </view>
+
+  <view class="total">
+    共{{totalNum}}件商品，小计 ￥{{totalPrice}}
+  </view>
+  <view class="whiteSpace"></view>
+  <view class="payWay" >
+    微信支付
+  </view>
+</view>
+
+<view class="pay">
+  <view class="total2">总金额：
+    <text>￥{{totalPrice}}</text>
+  </view>
+  <view class="goWePay" bindtap="goWePay">支付</view>
+</view>

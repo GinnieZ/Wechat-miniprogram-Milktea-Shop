@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.demo01.demo.mappers.MilkteaMapper">
+
+    <!--检索前n项-->
+    <select id="selectTop" resultType="Milktea">
+        select *
+        from milktea limit
+             #{num}
+    </select>
+
+    <select id="selectMilkteaById" resultType="Milktea">
+        select *
+        from milktea
+        where id = #{id}
+    </select>
+
+    <!--检索前n项-->
+    <select id="selectAll" resultType="Milktea">
+        select *
+        from milktea
+    </select>
+
+    <select id="selectByType" resultType="Milktea">
+        select *
+        from milktea
+        where type = #{type}
+    </select>
+
+    <select id="countType" resultType="int">
+        select count(*)
+        from (select distinct(type) from milktea) as types
+    </select>
+
+    <select id="countMilktea" resultType="int">
+        select count(*)
+        from milktea
+    </select>
+</mapper>

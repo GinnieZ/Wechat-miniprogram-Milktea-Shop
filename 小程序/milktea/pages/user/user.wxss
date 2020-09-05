@@ -1,0 +1,13 @@
+page{background-color: #f0f0f0;}
+.u{display: flex;padding:15px 0; flex-direction:row; background-color:#FFE4C4}
+.u .logo{padding:0 20px;}
+.u .logo image{width: 60px; height: 60px; border-radius: 50%; border:2px solid #fff;}
+
+.des .uname{ color: #fff;font-weight:bold;font-size:15pt; padding: 2px 0;}
+.des .phone{ color: #fff;font-size:10pt; margin-top:5px;}
+
+
+.ub{margin-top: 10px; border-top:1rpx solid #ccc; background-color: #fff;}
+.ub .item{width: 100%; height:50px;display: flex;line-height: 45px;flex-direction:row;border-bottom: 1rpx solid #ddd;}
+.ub .item .image{width: 50px;height: 40px; align-items: center; display: flex; }
+.ub .item .text{width: 100%;height: 50px;margin-left:10px; font-size: 12pt}

@@ -1,0 +1,15 @@
+.box{
+  width: 500rpx;
+  height: 600rpx;
+  background-color:whitesmoke;
+  /* 弹性布局 */
+  /* display: flex; */
+  /* 弹性布局希不希望换行 */
+  /* flex-wrap: wrap; */
+  /* 设置元素的间距
+  justify-content: space-around;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}

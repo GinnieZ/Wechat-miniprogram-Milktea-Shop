@@ -1,0 +1,47 @@
+<view class="u">
+  <view class="logo" bindtap="changeing">
+    <!-- <image src="{{headimg}}"></image> -->
+    <image src="/icon/index1.jpg"></image>
+  </view>
+  <view class="des">
+    <view class="uname">{{username}}</view>
+    <view class="phone">{{level}}</view>
+  </view>
+</view>
+
+<view class="ub">
+
+  <view class="item" >
+    <view class="image"><image src="/icon/index3.png" class="image"></image></view>
+    <view class="text" >
+        <navigator url="../user/user/changeSecret/changeSecret" open-type="navigate" hover-class="navigator-hover">修改密码</navigator>
+    </view>
+  </view>
+
+    <view class="item" >
+    <view class="image"><image src="/icon/index4.png" class="image"></image></view>
+    <view class="text" >
+        <navigator url="../user/user/changeUserInfo/changeUserInfo" open-type="navigate" hover-class="navigator-hover">修改个人信息</navigator>
+    </view>
+  </view>
+
+    <view class="item" >
+    <view class="image"><image src="/icon/index6.png" class="image"></image></view>
+    <view class="text" >
+        <navigator url="../login/login" open-type="navigate" hover-class="navigator-hover">登录</navigator>
+    </view>
+  </view>
+
+  <view class="item" >
+    <view class="image"><image src="/icon/index7.png" class="image"></image></view>
+    <view class="text" >
+        <navigator url="../user/user/logon/logon" open-type="navigate" hover-class="navigator-hover">注册</navigator>
+    </view>
+  </view>
+
+  <view class="item" >
+    <view class="image"><image src="/icon/index5.png" class="image"></image></view>
+    <view class="text" bindtap="clearInfo">退出</view>
+  </view>
+
+</view>

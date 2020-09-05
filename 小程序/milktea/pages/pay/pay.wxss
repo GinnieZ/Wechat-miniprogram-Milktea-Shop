@@ -1,0 +1,165 @@
+
+.list{
+  width: 100%;
+  height: 1500rpx;
+  background-color:whitesmoke;
+  padding:5% 0; 
+  /* 弹性布局 */
+  /* display: flex; */
+  /* 弹性布局希不希望换行 */
+  /* flex-wrap: wrap; */
+  /* 设置元素的间距
+  justify-content: space-around;*/
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;  */
+}
+.list .phone{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color:white;
+  text-align: left;
+  border-radius: 20rpx 20rpx 0rpx 0rpx ;
+}
+.list .whiteSpace{
+  width: 100%;
+  height: 20rpx;
+  background-color:whitesmoke;
+}
+
+.list .label{
+  width: 100%;
+  height: 100rpx;
+  background-color:white;
+  text-align: left;
+  line-height: 100rpx;
+}
+
+.list .eachOne{
+  /* width: 30%; */
+  width: 100%;
+  height: 250rpx;
+  background-color:white; 
+
+  display: flex;
+  flex-direction: row;
+  /* 水平居中 */
+  /* justify-content: center; */
+  /* 垂直居中 */
+  align-items: center;
+}
+
+/* #mess2{
+  background-color:oldlace;
+} */
+
+.list .eachOne .pic{
+  width: 20%;
+  height: 60%;
+  /* background-color:azure; */
+  background-color:white;
+  border-radius:10rpx;
+  display: flex;
+  /* flex-direction: column;  */
+  /* justify-content: center; 
+  align-items: center; */
+  align-items: center;
+  padding-left: 5rpx;
+}
+
+.list .eachOne .drinkNameAndInfo{
+  width: 50%;
+  height: 60%;
+  /* background-color:azure; */
+  background-color:white;
+}
+.list .eachOne .drinkNameAndInfo .drinkName{
+  width: 100%;
+  height: 60%;
+  font-size: 35rpx;
+  /* background-color:azure; */
+  background-color:white;
+  line-height: 60rpx;
+}
+.list .eachOne .drinkNameAndInfo .drinkInfo{
+  width: 100%;
+  height: 40%;
+  font-size: 25rpx;
+  /* background-color:azure; */
+  background-color:white;
+  color:#999;
+}
+.list .eachOne .drinkNum{
+  width: 10%;
+  height: 60%;
+  /* background-color:azure; */
+  background-color:white;
+  line-height: 120rpx;
+}
+.list .eachOne .drinkPrice{
+  width: 20%;
+  height: 60%;
+  /* background-color:azure; */
+  background-color:white;
+  line-height: 120rpx;
+  text-align: center;
+}
+.img{
+  width: 90%;
+  height: 90%;
+  /* border-radius:50%; */
+}
+.list .total{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color:white;
+  text-align: right;
+}
+.list .payWay{
+  width: 100%;
+  height: 80rpx;
+  background-color:white;
+  text-align: right;
+  line-height: 80rpx;
+}
+
+
+
+
+.pay {
+  position: fixed;
+  left: 0;
+  bottom: 6px;
+  z-index: 3;
+  display: flex;
+  width: 750rpx;
+  align-items: center;
+}
+
+.pay .total2 {
+  flex: 2;
+  text-align: left;
+  padding: 0 20rpx;
+  font-size: 11pt;
+  color: #999;
+}
+
+.pay .total2 text {
+  color: #ff6a00;
+  font-size: 15pt;
+}
+
+.pay .goWePay {
+  flex: 1;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #e7c290;
+  border: 1rpx solid #e7c290;
+  color: #fff;
+  margin: 0 20rpx 0 10rpx;
+}

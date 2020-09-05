@@ -1,0 +1,160 @@
+.main {
+  margin-bottom: 120px;
+}
+
+.current-name {
+  font-size: 17pt;
+  font-weight: bold;
+  padding: 20rpx 30rpx;
+  margin: 10rpx 0 0;
+  background-color: #fff;
+}
+
+.current-des {
+  font-size: 12pt;
+  line-height: 22px;
+  padding: 0 35rpx 20rpx;
+  color: #999;
+}
+
+.current-des {
+  border-bottom: 1rpx solid #eee;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #808080;
+  margin-left: 48rpx;
+  margin-top: 40rpx;
+  margin-bottom: 25rpx;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.button-container button {
+
+  font-size: 28rpx;
+  text-align: center;
+
+}
+
+.button-container button::after {
+  border: none;
+}
+
+
+
+/* 按钮未选中 */
+.normal-button {
+  background: #F5F5F7;
+  color: #808080;
+}
+
+/* 按钮选中 */
+.checked-button {
+  background: #F6EEE4;
+  color: #C69E6D;
+}
+
+.bottom-bar {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1rpx solid #eee;
+}
+
+.bottom-bar-top {
+  display: flex;
+}
+
+.current-price {
+  padding: 20rpx;
+  color: #C69E6D;
+  display: flex;
+  width: 150rpx;
+}
+
+.current-price text {
+  font-size: 23pt;
+  font-weight: bold;
+}
+
+.total-text {
+  color: #808080;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  width: 400rpx;
+  margin-left: 15rpx;
+}
+
+.number {
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+}
+
+.minus-button {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 30rem;
+  text-align: center;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #eee;
+}
+
+.plus-button {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 30rem;
+  background-color: white;
+  text-align: center;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E9D4BB;
+}
+
+.minus-button text {
+  line-height: 100%;
+  color: #808080;
+}
+
+.plus-button text {
+  line-height: 100%;
+  color: white;
+}
+
+.milktea-num {
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  color: #808080;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.confirm {
+  width: 90%;
+  height: 100rpx;
+  text-align: center;
+  background-color: #E9D4BB;
+  margin-bottom: 35rpx;
+}
+
+.confirm::after {
+  border: none;
+}
+
+.confirm text {
+  color: white;
+  font-size: 35rpx;
+}
